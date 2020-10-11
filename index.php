@@ -291,6 +291,7 @@
 	</div>
 
 	<?php include_once 'includes/footer.php'; ?>
+	<script src="src/js/main.js"></script>
 
 </body>
 </html>

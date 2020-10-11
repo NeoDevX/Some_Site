@@ -31,6 +31,9 @@ body {
   font-family: monospace;
   text-decoration: none;
 }
+ul li a.current {
+  color: red;
+}
 .header__top-menu ul li a:hover {
   border-bottom: 2px solid black;
 }
