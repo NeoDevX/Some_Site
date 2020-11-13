@@ -39,7 +39,7 @@
 													<div class="article__image" style="background-image: url(./src/images/<?php echo $article['image'] ?>);">
 													</div>
 													<div class="article__info">
-														<a href="#" class="article__title"><?php echo mb_substr($article['title'], 0, 25, 'utf-8') . ' ...'; ?></a>
+														<a href="pages/Article.php?id=<?php echo $article['id']; ?>" class="article__title"><?php echo mb_substr($article['title'], 0, 25, 'utf-8') . ' ...'; ?></a>
 														<div class="article__info-meta">
 															<?php
 																foreach ($categories as $categorie) {

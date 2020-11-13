@@ -26,11 +26,11 @@
 							<div class="article__info-meta">
 								<?php
 									foreach ($categories as $categorie) {
-                    if ($categorie['id'] == $article['categorie_id']) {
-                      $article_categorie = $categorie;
-                      break;
-                    }
-                  }
+										if ($categorie['id'] == $article['categorie_id']) {
+										$article_categorie = $categorie;
+										break;
+										}
+									}
 								?>
 								<small>Категория : <a><?php echo $article_categorie['title']; ?></a></small>
 							</div>
@@ -65,12 +65,14 @@
 					<div class="article">
 						<div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/<?php echo md5($comment['email']); ?>?s=125);">
 						</div>
-						<div class="article__info">
+						<div class="article__info">			
 							<a href="#" class="article__title"><?php echo $comment['author']; ?></a>
-							<div class="article__info-meta"><small>Login: <?php echo $comment['login']; ?></small></div>
+							<div class="article__info-meta">
+								<small>Login: <?php echo $comment['login']; ?></small>
+							</div>
 							<div class="article__info-preview">
 								<?php
-									echo mb_substr($comment['text'], 0, 130, 'utf-8') . ' ...';
+									echo mb_substr($comment['text'], 0, 80, 'utf-8') . ' ...';
 								?>
 							</div>
 						</div>

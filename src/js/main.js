@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 		about.classList.remove("current");
 		main.classList.add("current")
 	}
-	else 
+	else if (url == "http://ownhtmlphp/pages/About.php")
 	{
 		main.classList.remove("current");
 		about.classList.add("current");

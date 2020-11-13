@@ -1,7 +1,7 @@
 <?php
 
 	$config = array(
-		'title' => 'The_Best_Cite',
+		'title' => 'Simple_Site',
 		'vk_url' => 'https://vk.com/JanbolotSabyrbekov',
 		'gh_url' => 'https://github.com/SabyrbekovJanbolot',
 		'db' => array(
